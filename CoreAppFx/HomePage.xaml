@@ -1,0 +1,16 @@
+﻿<Page
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="CoreAppFx.HomePage"
+	xmlns:local="using:CoreAppFx"
+	xmlns:muxc="using:Microsoft.UI.Xaml.Controls">
+
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock Text="UWP on .NET Framework 🤖" FontSize="48"/>
+        <TextBlock Text="{x:Bind FrameworkDescription}"/>
+        <Button x:Name="TipBtn" Margin="0, 8, 0, 0" Click="TipBtn_Click">Show TeachingTip</Button>
+        <muxc:TeachingTip x:Name="Tip" Target="{x:Bind TipBtn}" Title="WinUI 🎉!" PreferredPlacement="Bottom">
+            This is TeachingTip from WinUI 2.
+        </muxc:TeachingTip>
+    </StackPanel>
+</Page>

@@ -1,0 +1,18 @@
+﻿<Page
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="CoreAppFx.ColorPage"
+	xmlns:local="using:CoreAppFx"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls">
+
+    <StackPanel Orientation="Vertical" Margin="48, 48, 48, 48">
+        <TextBlock Text="{x:Bind TextBox.Text, Mode=OneWay}" FontSize="{x:Bind FontSizeSlider.Value, Mode=OneWay}">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{x:Bind FontColorPicker.Color, Mode=OneWay}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBox x:Name="TextBox" Text="Colorful!"/>
+        <Slider x:Name="FontSizeSlider" Minimum="1" Maximum="100" Value="48"/>
+        <muxc:ColorPicker x:Name="FontColorPicker" Color="{StaticResource SystemAccentColor}"/>
+    </StackPanel>
+</Page>

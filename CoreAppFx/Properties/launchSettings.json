@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CoreAppFx": {
+      "commandName": "MsixPackage",
+      "nativeDebugging": true
+    }
+  }
+}
