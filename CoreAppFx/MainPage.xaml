@@ -2,34 +2,31 @@
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	x:Class="CoreAppFx.MainPage"
-	xmlns:local="using:CoreAppFx"
-	xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
-    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+	xmlns:local="using:CoreAppFx">
 
-    <muxc:NavigationView x:Name="NavView" IsTitleBarAutoPaddingEnabled="false" IsSettingsVisible="False" IsBackButtonVisible="Collapsed"
-                         Margin="0, 48, 0, 0" SelectionChanged="NavView_SelectionChanged">
-        <muxc:NavigationView.MenuItems>
-            <muxc:NavigationViewItem Content="Home" Tag="home">
-                <muxc:NavigationViewItem.Icon>
+    <NavigationView x:Name="NavView" IsSettingsVisible="False" IsBackButtonVisible="Collapsed" SelectionChanged="NavView_SelectionChanged">
+        <NavigationView.MenuItems>
+            <NavigationViewItem Content="Home" Tag="home">
+                <NavigationViewItem.Icon>
                     <SymbolIcon Symbol="Home"/>
-                </muxc:NavigationViewItem.Icon>
-            </muxc:NavigationViewItem>
-            <muxc:NavigationViewItem Content="Colors" Tag="color">
-                <muxc:NavigationViewItem.Icon>
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Content="Colors" Tag="color">
+                <NavigationViewItem.Icon>
                     <FontIcon Glyph="&#xE790;"/>
-                </muxc:NavigationViewItem.Icon>
-            </muxc:NavigationViewItem>
-            <muxc:NavigationViewItem Content="Todo" Tag="todo">
-                <muxc:NavigationViewItem.Icon>
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Content="Todo" Tag="todo">
+                <NavigationViewItem.Icon>
                     <FontIcon Glyph="&#xE9D5;"/>
-                </muxc:NavigationViewItem.Icon>
-            </muxc:NavigationViewItem>
-            <muxc:NavigationViewItem Content="WebView" Tag="webView">
-                <muxc:NavigationViewItem.Icon>
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Content="WebView" Tag="webView">
+                <NavigationViewItem.Icon>
                     <FontIcon Glyph="&#xE774;"/>
-                </muxc:NavigationViewItem.Icon>
-            </muxc:NavigationViewItem>
-        </muxc:NavigationView.MenuItems>
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+        </NavigationView.MenuItems>
         <Frame x:Name="rootFrame"/>
-    </muxc:NavigationView>
+    </NavigationView>
 </Page>

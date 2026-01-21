@@ -1,5 +1,4 @@
 ﻿using Windows.UI.Xaml.Controls;
-using MUXC = Microsoft.UI.Xaml.Controls;
 using System.Collections.Generic;
 using System;
 
@@ -21,7 +20,7 @@ namespace CoreAppFx
             NavView.SelectedItem = NavView.MenuItems[0];
         }
 
-        private void NavView_SelectionChanged(MUXC.NavigationView sender, MUXC.NavigationViewSelectionChangedEventArgs args)
+        private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
             string tag = args.SelectedItemContainer.Tag.ToString() ?? "";
             if (Pages.TryGetValue(tag, out var targetPage))

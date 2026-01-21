@@ -1,13 +1,8 @@
 <Solution>
   <Configurations>
-    <Platform Name="ARM64" />
-    <Platform Name="x64" />
-    <Platform Name="x86" />
+    <Platform Name="Any CPU" />
   </Configurations>
   <Project Path="CoreAppFx/CoreAppFx.csproj">
-    <Platform Solution="*|ARM64" Project="ARM64" />
-    <Platform Solution="*|x86" Project="x86" />
-    <Platform Solution="*|x64" Project="x64" />
     <Deploy Solution="*|*"/>
   </Project>
 </Solution>
