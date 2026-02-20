@@ -5,6 +5,7 @@
 		<TargetFramework>net48</TargetFramework>
 		<TargetPlatformVersion>10.0.26100.0</TargetPlatformVersion>
 		<TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
+		<PreferNativeArm64>true</PreferNativeArm64>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
 		<MileXamlNoSunValleyXamlStyle>true</MileXamlNoSunValleyXamlStyle>
